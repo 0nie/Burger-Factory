@@ -123,3 +123,36 @@
         left: unset;
     }
 }
+
+.category__tab{
+    ul{
+        @include centerBetween;
+        gap: 3rem;
+        border-radius: 3rem;
+        box-shadow: $shadow;
+        max-width: 43rem;
+        width: 100%;
+        margin: 0 auto;
+
+        li{
+            min-width: 7rem;
+            a{
+                display: block;
+                padding: 1rem;
+                text-align: center;
+                border-radius: 3rem;
+                transition: .5s ease;
+                &:hover{
+                    background-color: $clr-primary;
+                    color: $clr-light;
+                    transition: .5s ease;
+                }
+            }
+        }
+
+        li.active a{
+            background-color: $clr-primary;
+            color: $clr-light;
+        }
+    }
+}
