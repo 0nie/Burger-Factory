@@ -1,0 +1,44 @@
+.footer{
+    background-color: $clr-dark;
+    color: $clr-light;
+    max-height: 43rem;
+    height: 100%;
+    @include mediaQuery($mobile){
+        max-height: 100rem;
+        height: 100%;
+
+    }
+
+    &__wrapper{
+    @include gridUneven(2fr 1fr 1fr 1fr, 2rem);
+    @include mediaQuery($mobile){
+        @include grid(1, 5rem)
+    }
+    
+
+    .main-footer .text{
+    max-width: 25rem;
+    width: 100%;
+        }
+    }
+
+    .copyright{
+    text-align: center;
+    color: $clr-primary;
+    margin-top: 8rem;
+    }
+
+    .flex_it ul li{
+    margin-bottom: 3rem;
+    @include mediaQuery ($mobile){
+        margin-bottom: 2.5rem;
+    }
+    }
+
+}
+
+
+
+
+
+

@@ -600,9 +600,177 @@
 
         <section class="newsletter">
             <div class="newsletter__wrapper">
-                <h2>Subscriber</h2>
+                <h2>Subscriber <span>Newsletter</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur corrupti non nisi debitis eligendi quisquam.</p>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </section>
+
+        <section class="faq py--6">
+
+            <div class="container">
+
+                <div class="faq-wrapper">
+
+                    <div class="block__header">
+                        <span>FAQS</span>
+                        <h2>Frequently Asked <span>Questions</span></h2>
+                    </div>
+
+                    <div class="faq__block">
+
+                        <div class="faq__question">
+
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae dolorem cum! Molestias!</h3>
+                            
+                            <i class="fas fa-plus"></i>
+
+                        </div>
+                        
+                        <div class="faq__answer open">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem beatae vel magni?</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="faq__block">
+
+                        <div class="faq__question">
+
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae dolorem cum! Molestias!</h3>
+                            
+                            <i class="fas fa-plus"></i>
+
+                        </div>
+                        
+                        <div class="faq__answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem beatae vel magni?</p>
+                        </div>
+
+                    </div>
+
+                    <div class="faq__block">
+
+                        <div class="faq__question">
+
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae dolorem cum! Molestias!</h3>
+                            
+                            <i class="fas fa-plus"></i>
+
+                        </div>
+                        
+                        <div class="faq__answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem beatae vel magni?</p>
+                        </div>
+
+                    </div>
+
+                    <div class="faq__block">
+
+                        <div class="faq__question">
+
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ipsa?</h3>
+                            
+                            <i class="fas fa-plus"></i>
+
+                        </div>
+                        
+                        <div class="faq__answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem beatae vel magni?</p>
+                        </div>
+
+                    </div>
+
+                    <div class="faq__block">
+
+                        <div class="faq__question">
+
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae dolorem cum! Molestias!</h3>
+                            
+                            <i class="fas fa-plus"></i>
+
+                        </div>
+                        
+                        <div class="faq__answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem beatae vel magni?</p>
+                        </div>
+
+                    </div>
+
+                  
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer py--6">
+
+            <div class="container">
+                <div class="footer__wrapper">
+
+                    <div class="flex_it main-footer">   
+                        <ul>
+                            <li><h3>FOOD <span>FACTORY</span></h3></li>
+                            <li class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae eveniet dolores voluptatum perspiciatis adipisci!</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="flex_it">
+                        <ul>
+                            <li><h3>FOOD FACTORY</h3></li>
+                            <li>Menu</li>
+                            <li>Products</li>
+                            <li>Mobile App</li>
+                            <li>Booking</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex_it">
+                        <ul>
+                            <li><h3>SUPPORT</h3></li>
+                            <li>Get Help</li>
+                            <li>Contact Us</li>
+                            <l>Feedback</l>
+                        </ul>
+                    </div>
+
+                    <div class="flex_it">
+                        <ul>
+                            <li><h3>LEGAL</h3></li>
+                            <li>Terms and Condition</li>
+                            <li>Privacy Policy</li>
+                            <l>Desclaimer</l>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="copyright">
+                    <span>Copyright © Food Factory 2022 All Right Reserved</span>
+                </div>
+
+            </div>
+
+            
+
+        </footer>
+
+        <script>
+            const questions = document.querySelectorAll(".faq__question");
+
+            questions.forEach((questionItem) => {
+                questionItem.addEventListener("click", () => {
+                    questionItem.nextElementSibling.classList.toggle("open");
+                    questionItem.classList.toggle("open");
+                })
+            })
+        </script>
 
     </body>
 
